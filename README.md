@@ -29,7 +29,7 @@ repositorio: `https://github.com/TecnologoInformatico/AdmInf-web.git`
 ```
 
 
-1-
+```1-
 mkdir repositorios
 cd repositorios
 git clone https://github.com/TecnologoInformatico/AdmInf-web.git
@@ -74,3 +74,4 @@ Ingreso 144.22.253.73 en el navegador (Por algun motivo no funciona)
     "serverName": "ssosa.tecnologoinformatico.com",
     "ip": "144.22.253.73"
 }
+```
