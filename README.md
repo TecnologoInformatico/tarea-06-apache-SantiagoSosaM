@@ -27,3 +27,50 @@ repositorio: `https://github.com/TecnologoInformatico/AdmInf-web.git`
     "ip": ""
 }
 ```
+
+
+1-
+mkdir repositorios
+cd repositorios
+git clone https://github.com/TecnologoInformatico/AdmInf-web.git
+
+2-
+sudo apt update
+
+3-
+sudo apt install apache2
+
+4-
+sudo mkdir /var/www/ssosa
+
+5-
+sudo chown ubuntu /var/www/ssosa
+
+6-
+cd /etc/apache2/sites-available/
+sudo cp 000-default.conf ssosa.conf
+sudo nano ssosa.conf
+	ServerName ssosa.tecnologoinformatico.com
+	ServerAdmin santiago.sosa.m@estudiantes.utec.edu.uy
+	DocumentRoot /var/www/ssosa/
+
+7-
+cd ..
+cd ..
+sudo nano hosts
+	127.0.0.1 ssosa.tecnologoinformatico.com
+
+8-
+sudo systemctl restart apache2
+
+9-
+sudo cp -r ~/repositorios/AdmInf-web/* /var/www/ssosa/
+
+10-
+Ingreso 144.22.253.73 en el navegador (Por algun motivo no funciona)
+
+11-
+{
+    "serverName": "ssosa.tecnologoinformatico.com",
+    "ip": "144.22.253.73"
+}
